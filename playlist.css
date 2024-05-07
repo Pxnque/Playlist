@@ -1,15 +1,130 @@
-.mainCaja{
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 35%, rgba(166,0,255,1) 100%);
+}
+
+.reproductor{
+    
+    padding-top: 20vh;
+    left: 50%;
+}
+
+.container {
+    background-color: rgb(255,255,255,0.2);
+    backdrop-filter: blur(100px);
     border-style: solid;
     border-color: black;
-    display: flex;
-    align-items: center;
-}
-.ventana{
-    h1{
-        border-style: solid;
-        border-color: black;
-        align-items: center;
-        padding-left: 30vw;  
-    }
+    border-radius: 3%;
+    width: 50%;
     
+    margin: auto;
+    padding-top: 20px;
+
+    img{
+        padding-top: 5vh;
+        height: 30vh;
+        width: 30vh;
+    }
+}
+
+.photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.header {
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    justify-items: center;
+    img{
+        padding-top: 0;
+        height: 5vh;
+        width: 5vh;
+    }
+
+}
+
+.audio-controls{
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.audio-controls button {
+
+padding: 0.6em 2em;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+    
+    
+}
+
+.audio-controls button::before{
+    content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+@keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+.audio-controls button::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }

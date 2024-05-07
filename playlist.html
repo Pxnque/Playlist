@@ -1,16 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Día de la Madre</title>
+    <link rel="stylesheet" href="playlist.css">
 </head>
 <body>
-    <div class="mainCaja">
-        <div class="ventana">
+    <div class="reproductor">
+        <div class="container">
+            <div class="header">
+                <p>logo</p>
+                <h3>Feliz dia de las madres</h3>
+                <img src="img/lupa.png" alt="luna">
+            </div>
+                <img src="img/chayane.jpg" alt="Foto de madre" class="photo"> 
             
-        <h1>hola</h1>
+            <div class="audio-controls">
+                <button onclick="prevSong()" id="botonaso"><</button>
+                <button onclick="togglePlay()" id="botonaso">> / II</button>
+                <button onclick="nextSong()" id="botonaso">></button>
+            </div>
+            <audio id="audioPlayer" controlslist>
+                <source src="../Playlist/Canciones/Alejandro Sanz - Corazon Partio [Latin Mix] (Official Music Video).mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Chayanne - Dejaría Todo.mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Marco Antonio Solís - Si No Te Hubieras Ido (Live).mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Te quiero.mp3" type="audio/mpeg">
+                
+            </audio>
         </div>
-    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
