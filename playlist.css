@@ -1,0 +1,15 @@
+.mainCaja{
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+}
+.ventana{
+    h1{
+        border-style: solid;
+        border-color: black;
+        align-items: center;
+        padding-left: 30vw;  
+    }
+    
+}
