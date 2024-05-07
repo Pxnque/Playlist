@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Día de la Madre</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="playlist.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Feliz Día de la Madre</h1>
-        <img src="madre.jpg" alt="Foto de madre" class="photo">
-        <div class="audio-controls">
-            <button onclick="prevSong()">Anterior</button>
-            <button onclick="togglePlay()">Reproducir/Pausar</button>
-            <button onclick="nextSong()">Siguiente</button>
+    <div class="reproductor">
+        <div class="container">
+            <div class="header">
+                <p>logo</p>
+                <h3>Feliz dia de las madres</h3>
+                <img src="Imagenes/lupa.png" alt="luna">
+            </div>
+                <img src="Imagenes/chayane.jpg" alt="Foto de madre" class="photo"> 
+            
+            <div class="audio-controls">
+                <button onclick="prevSong()" id="botonaso"><</button>
+                <button onclick="togglePlay()" id="botonaso">> / II</button>
+                <button onclick="nextSong()" id="botonaso">></button>
+            </div>
+            <audio id="audioPlayer" controlslist autoplay>
+                <source src="song1.mp3" type="audio/mpeg">
+                Tu navegador no soporta audio HTML5.
+            </audio>
         </div>
-        <audio id="audioPlayer" controls>
-            <source src="song1.mp3" type="audio/mpeg">
-            Tu navegador no soporta audio HTML5.
-        </audio>
     </div>
     <script src="script.js"></script>
 </body>
