@@ -12,36 +12,24 @@
             <div class="header">
                 <p>logo</p>
                 <h3>Feliz dia de las madres</h3>
-                <img src="Imagenes/lupa.png" alt="luna">
+                <img src="img/lupa.png" alt="luna">
             </div>
-                <img src="Imagenes/chayane.jpg" alt="Foto de madre" class="photo"> 
+                <img src="img/chayane.jpg" alt="Foto de madre" class="photo"> 
             
             <div class="audio-controls">
                 <button onclick="prevSong()" id="botonaso"><</button>
                 <button onclick="togglePlay()" id="botonaso">> / II</button>
                 <button onclick="nextSong()" id="botonaso">></button>
             </div>
-            <audio id="audioPlayer" controlslist autoplay>
-                <source src="song1.mp3" type="audio/mpeg">
-                Tu navegador no soporta audio HTML5.
+            <audio id="audioPlayer" controlslist>
+                <source src="../Playlist/Canciones/Alejandro Sanz - Corazon Partio [Latin Mix] (Official Music Video).mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Chayanne - Dejaría Todo.mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Marco Antonio Solís - Si No Te Hubieras Ido (Live).mp3" type="audio/mpeg">
+                <source src="../Playlist/Canciones/Te quiero.mp3" type="audio/mpeg">
+                
             </audio>
         </div>
-    <div class="container">
-        <h1>Feliz Día de la Madre</h1>
-        <img src="madre.jpg" alt="Foto de madre" class="photo">
-        <div class="audio-controls">
-            <button onclick="prevSong()">Anterior</button>
-            <button onclick="togglePlay()">Reproducir/Pausar</button>
-            <button onclick="nextSong()">Siguiente</button>
-        </div>
-        <audio id="audioPlayer" controls>
-            <source src="../Playlist/Canciones/Alejandro Sanz - Corazon Partio [Latin Mix] (Official Music Video).mp3" type="audio/mpeg">
-            <source src="../Playlist/Canciones/Chayanne - Dejaría Todo.mp3" type="audio/mpeg">
-            <source src="../Playlist/Canciones/Marco Antonio Solís - Si No Te Hubieras Ido (Live).mp3" type="audio/mpeg">
-            <source src="../Playlist/Canciones/Te quiero.mp3" type="audio/mpeg">
-            
-        </audio>
-    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
